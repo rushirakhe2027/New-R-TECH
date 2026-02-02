@@ -53,15 +53,15 @@ const HackathonLanding = () => {
                   <span className="text-neon-blue text-xs font-black tracking-widest uppercase">36-Hour Online Hackathon</span>
                 </div>
               </div>
-              <h1 className="text-7xl md:text-[9rem] font-black tracking-tighter mb-8 leading-[0.85] text-white">
+              <h1 className="text-5xl md:text-[8rem] lg:text-[9rem] font-black tracking-tighter mb-8 leading-[0.9] text-white">
                 BUILDATHON <br/>
                 <span className="gradient-text">2026</span>
               </h1>
-              <p className="text-gray-400 text-2xl md:text-3xl font-light max-w-3xl mx-auto mb-16 leading-relaxed">
+              <p className="text-gray-400 text-xl md:text-3xl font-light max-w-3xl mx-auto mb-16 leading-relaxed">
                 Build from Anywhere. <span className="text-white font-bold">Compete Everywhere.</span>
               </p>
               <div className="flex flex-wrap justify-center gap-8 mb-16">
-                <div className="glass-card p-8 rounded-3xl min-w-[340px] text-left border-neon-blue/20 hover:border-neon-blue/50 transition-all duration-500">
+                <div className="glass-card p-6 md:p-8 rounded-3xl w-full max-w-[340px] text-left border-neon-blue/20 hover:border-neon-blue/50 transition-all duration-500">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="material-symbols-outlined text-neon-blue">workspace_premium</span>
                     <span className="text-neon-blue text-xs font-black uppercase tracking-widest">Prize Distribution</span>
@@ -96,7 +96,7 @@ const HackathonLanding = () => {
                     </p>
                   </div>
                 </div>
-                <div className="glass-card p-8 rounded-3xl min-w-[340px] text-left border-white/10 hover:border-white/20 transition-all duration-500">
+                <div className="glass-card p-6 md:p-8 rounded-3xl w-full max-w-[340px] text-left border-white/10 hover:border-white/20 transition-all duration-500">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="material-symbols-outlined text-primary">groups</span>
                     <span className="text-primary text-xs font-black uppercase tracking-widest">Entry & Eligibility</span>
@@ -116,11 +116,11 @@ const HackathonLanding = () => {
                   <p className="text-[11px] text-gray-500 font-bold uppercase tracking-wider">Team Size: 1-4 Members</p>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-                <Link to="/hackathons/submit" className="bg-neon-blue text-black px-16 py-6 rounded-full text-xl font-black shadow-[0_0_30px_rgba(0,242,255,0.4)] hover:shadow-[0_0_50px_rgba(0,242,255,0.6)] transition-all hover:scale-105 uppercase tracking-widest">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8">
+                <Link to="/hackathons/submit" className="w-full sm:w-auto bg-neon-blue text-black px-8 md:px-16 py-4 md:py-6 rounded-full text-lg md:text-xl font-black shadow-[0_0_30px_rgba(0,242,255,0.4)] hover:shadow-[0_0_50px_rgba(0,242,255,0.6)] transition-all hover:scale-105 uppercase tracking-widest text-center">
                   REGISTER NOW
                 </Link>
-                <Link to="/hackathons/rules" className="border border-white/10 hover:border-white/30 hover:bg-white/5 text-white px-12 py-6 rounded-full text-lg font-bold transition-all">
+                <Link to="/hackathons/rules" className="w-full sm:w-auto border border-white/10 hover:border-white/30 hover:bg-white/5 text-white px-8 md:px-12 py-4 md:py-6 rounded-full text-lg font-bold transition-all text-center">
                   View Rules
                 </Link>
               </div>
@@ -457,7 +457,7 @@ const HackathonLanding = () => {
           </section>
 
           <section className="py-24 px-4">
-            <div className="max-w-6xl mx-auto glass-card rounded-[3.5rem] p-12 md:p-16 border-neon-blue/20 relative overflow-hidden">
+            <div className="max-w-6xl mx-auto glass-card rounded-[2.5rem] md:rounded-[3.5rem] p-8 md:p-16 border-neon-blue/20 relative overflow-hidden">
               <div className="absolute -right-32 -bottom-32 w-96 h-96 bg-neon-blue/5 rounded-full blur-[100px]"></div>
               <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div>
