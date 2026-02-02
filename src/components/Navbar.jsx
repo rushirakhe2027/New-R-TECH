@@ -1,0 +1,46 @@
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <div className="container nav-container">
+        <div className="logo">
+          <div className="logo-icon"></div>
+          <span>R Tech Solutions</span>
+        </div>
+
+        <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+          <div className="nav-menu">
+            <a href="/#services" onClick={() => setIsOpen(false)}>Services</a>
+            <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
+            <a href="/#why-us" onClick={() => setIsOpen(false)}>Why Us</a>
+            <Link to="/hackathons" onClick={() => setIsOpen(false)}>Hackathons</Link>
+          </div>
+          <div className="nav-right">
+            <button className="btn btn-primary nav-cta">Contact Us</button>
+          </div>
+        </div>
+
+        <div className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

@@ -1,0 +1,482 @@
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
+const HackathonLanding = () => {
+  useEffect(() => {
+    document.documentElement.classList.add('dark');
+    return () => document.documentElement.classList.remove('dark');
+  }, []);
+
+  return (
+    <div className="bg-background-dark font-display text-white selection:bg-neon-blue selection:text-black">
+      <style>{`
+        :root {
+            --primary: #137fec;
+            --neon-blue: #00f2ff;
+            --background-dark: #080c14;
+        }
+        .glow-box {
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+        }
+        .neon-border {
+            border: 1px solid var(--neon-blue);
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #137fec, #00f2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+      `}</style>
+
+      <div className="relative flex min-h-screen flex-col overflow-x-hidden">
+        <main className="flex-1">
+          <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
+            <div className="absolute inset-0 z-0">
+              <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px]"></div>
+              <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-neon-blue/10 rounded-full blur-[140px]"></div>
+            </div>
+            <div className="relative z-10 w-full max-w-6xl text-center">
+              <div className="inline-flex flex-col items-center gap-4 mb-10">
+                <div className="flex items-center gap-3 text-neon-blue">
+                  <svg className="size-10 drop-shadow-[0_0_10px_rgba(0,242,255,0.8)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path clipRule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fillRule="evenodd"></path>
+                  </svg>
+                  <span className="text-white font-black tracking-[0.4em] uppercase text-sm">R Tech Solutions Presents</span>
+                </div>
+                <div className="bg-neon-blue/10 border border-neon-blue/30 backdrop-blur-md px-8 py-2.5 rounded-full shadow-[0_0_15px_rgba(0,242,255,0.1)]">
+                  <span className="text-neon-blue text-xs font-black tracking-widest uppercase">36-Hour Online Hackathon</span>
+                </div>
+              </div>
+              <h1 className="text-7xl md:text-[9rem] font-black tracking-tighter mb-8 leading-[0.85] text-white">
+                BUILDATHON <br/>
+                <span className="gradient-text">2026</span>
+              </h1>
+              <p className="text-gray-400 text-2xl md:text-3xl font-light max-w-3xl mx-auto mb-16 leading-relaxed">
+                Build from Anywhere. <span className="text-white font-bold">Compete Everywhere.</span>
+              </p>
+              <div className="flex flex-wrap justify-center gap-8 mb-16">
+                <div className="glass-card p-8 rounded-3xl min-w-[340px] text-left border-neon-blue/20 hover:border-neon-blue/50 transition-all duration-500">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="material-symbols-outlined text-neon-blue">payments</span>
+                    <span className="text-neon-blue text-xs font-black uppercase tracking-widest">Grand Prize Pool</span>
+                  </div>
+                  <p className="text-3xl font-black text-white mb-2 leading-tight">₹30,000 Direct Cash</p>
+                  <p className="text-sm text-gray-400 mb-2 italic">And for top performers have chance to win internship + goodies</p>
+                  <p className="text-[11px] text-primary font-bold uppercase tracking-wider">(Scales with Registrations)</p>
+                </div>
+                <div className="glass-card p-8 rounded-3xl min-w-[340px] text-left border-white/10 hover:border-white/20 transition-all duration-500">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="material-symbols-outlined text-primary">groups</span>
+                    <span className="text-primary text-xs font-black uppercase tracking-widest">Entry Details</span>
+                  </div>
+                  <p className="text-3xl font-black text-white mb-2 leading-tight">₹500 Per Team</p>
+                  <p className="text-sm text-gray-400 mb-2">Team Size: 1-4 Members / solo allowed</p>
+                  <p className="text-[11px] text-gray-500 font-bold uppercase tracking-wider">Open to BTech, Diploma, MCA</p>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                <Link to="/hackathons/submit" className="bg-neon-blue text-black px-16 py-6 rounded-full text-xl font-black shadow-[0_0_30px_rgba(0,242,255,0.4)] hover:shadow-[0_0_50px_rgba(0,242,255,0.6)] transition-all hover:scale-105 uppercase tracking-widest">
+                  REGISTER NOW
+                </Link>
+                <Link to="/hackathons/rules" className="border border-white/10 hover:border-white/30 hover:bg-white/5 text-white px-12 py-6 rounded-full text-lg font-bold transition-all">
+                  View Rules
+                </Link>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-20 bg-white/2 border-y border-white/5">
+            <div className="max-w-6xl mx-auto px-4 text-center">
+              <h2 className="text-2xl font-black mb-2 uppercase tracking-[0.2em] text-white">Organized by R Tech Solutions</h2>
+              <p className="text-neon-blue text-sm font-bold uppercase tracking-[0.3em] mb-12">Web & App Development | AI/ML Solutions</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div className="flex flex-col items-center gap-4 group">
+                  <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center group-hover:bg-neon-blue/10 transition-colors">
+                    <span className="material-symbols-outlined text-neon-blue text-3xl">corporate_fare</span>
+                  </div>
+                  <span className="font-bold text-gray-300 text-lg uppercase tracking-widest">Real Company</span>
+                </div>
+                <div className="flex flex-col items-center gap-4 group">
+                  <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center group-hover:bg-neon-blue/10 transition-colors">
+                    <span className="material-symbols-outlined text-neon-blue text-3xl">terminal</span>
+                  </div>
+                  <span className="font-bold text-gray-300 text-lg uppercase tracking-widest">Real Projects</span>
+                </div>
+                <div className="flex flex-col items-center gap-4 group">
+                  <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center group-hover:bg-neon-blue/10 transition-colors">
+                    <span className="material-symbols-outlined text-neon-blue text-3xl">gavel</span>
+                  </div>
+                  <span className="font-bold text-gray-300 text-lg uppercase tracking-widest">Real Judging</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-24 px-4 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+              <div className="space-y-12">
+                <div>
+                  <h2 className="text-4xl font-black mb-12 uppercase tracking-tight text-white">Event Logistics</h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div className="glass-card p-6 rounded-2xl border-white/5">
+                      <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">Participation Mode</p>
+                      <div className="flex items-center gap-3">
+                        <span className="material-symbols-outlined text-neon-blue">cloud_done</span>
+                        <p className="text-xl font-bold">100% Online</p>
+                      </div>
+                    </div>
+                    <div className="glass-card p-6 rounded-2xl border-white/5">
+                      <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">Event Window</p>
+                      <div className="flex items-center gap-3">
+                        <span className="material-symbols-outlined text-neon-blue">schedule</span>
+                        <p className="text-xl font-bold">36 Hours</p>
+                      </div>
+                      <p className="text-[10px] text-gray-500 mt-2 italic font-medium">After confirmation mail</p>
+                    </div>
+                    <div className="glass-card p-6 rounded-2xl border-white/5">
+                      <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">Collaboration</p>
+                      <div className="flex items-center gap-3">
+                        <span className="material-symbols-outlined text-neon-blue">diversity_3</span>
+                        <p className="text-xl font-bold">1-4 Members</p>
+                      </div>
+                      <p className="text-[10px] text-gray-500 mt-2 italic font-medium">Solo participants allowed</p>
+                    </div>
+                    <div className="glass-card p-6 rounded-2xl border-white/5">
+                      <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">Registration Fee</p>
+                      <div className="flex items-center gap-3">
+                        <span className="material-symbols-outlined text-neon-blue">payments</span>
+                        <p className="text-xl font-bold">₹500 Per Team</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h2 className="text-4xl font-black mb-8 uppercase tracking-tight text-white">Tech Stack</h2>
+                  <div className="flex flex-wrap gap-4">
+                    <span className="bg-white/5 border border-white/10 px-6 py-3 rounded-xl font-bold text-sm">Android / Java</span>
+                    <span className="bg-white/5 border border-white/10 px-6 py-3 rounded-xl font-bold text-sm">Web / MERN Stack</span>
+                    <span className="bg-white/5 border border-white/10 px-6 py-3 rounded-xl font-bold text-sm">AI-ML / Python</span>
+                  </div>
+                  <div className="mt-8 p-8 bg-neon-blue/5 border border-neon-blue/20 rounded-[2rem]">
+                    <h3 className="font-black text-xl mb-4 flex items-center gap-2 text-neon-blue">
+                      <span className="material-symbols-outlined">smart_toy</span>
+                      AI Usage Policy
+                    </h3>
+                    <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                      <strong className="text-white">AI is NOT compulsory.</strong> However, meaningful AI integration will be given higher consideration in final scoring.
+                    </p>
+                    <p className="text-gray-400 text-xs leading-relaxed">
+                      Use of AI tools (ChatGPT, Copilot etc.) is allowed, but teams must demonstrate thorough understanding of their implementation during the demo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-12">
+                <div className="glass-card p-10 rounded-[2.5rem] border-primary/20 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl rounded-full"></div>
+                  <h2 className="text-3xl font-black mb-8 flex items-center gap-3 text-white">
+                    <span className="material-symbols-outlined text-primary">analytics</span>
+                    Evaluation Criteria
+                  </h2>
+                  <div className="space-y-6">
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center text-sm">
+                        <span className="text-gray-400 font-medium">Problem Understanding</span>
+                        <span className="text-primary font-black">20%</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div className="h-full bg-primary w-[20%]"></div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center text-sm">
+                        <span className="text-gray-400 font-medium">Solution & Innovation</span>
+                        <span className="text-primary font-black">25%</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div className="h-full bg-primary w-[25%]"></div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center text-sm">
+                        <span className="text-gray-400 font-medium">Technical Implementation</span>
+                        <span className="text-primary font-black">25%</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div className="h-full bg-primary w-[25%]"></div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center text-sm">
+                        <span className="text-gray-400 font-medium">Real-world Impact</span>
+                        <span className="text-primary font-black">15%</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div className="h-full bg-primary w-[15%]"></div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center text-sm">
+                        <span className="text-gray-400 font-medium">AI Integration (if any)</span>
+                        <span className="text-primary font-black">10%</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div className="h-full bg-primary w-[10%]"></div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center text-sm">
+                        <span className="text-gray-400 font-medium">Presentation & Demo</span>
+                        <span className="text-primary font-black">5%</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div className="h-full bg-primary w-[5%]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-24 bg-white/2">
+            <div className="max-w-7xl mx-auto px-4">
+              <div className="text-center mb-16">
+                <h2 className="text-5xl font-black mb-4 uppercase tracking-tighter text-white">Hackathon Domains</h2>
+                <p className="text-gray-500 font-medium">Choose your battlefield from these 7 core industry domains</p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+                <div className="glass-card p-6 rounded-3xl text-center flex flex-col items-center gap-4 hover:border-neon-blue/40 transition-all group">
+                  <span className="material-symbols-outlined text-3xl text-red-400 group-hover:scale-110 transition-transform">health_and_safety</span>
+                  <p className="text-xs font-black uppercase tracking-widest leading-tight">Healthcare</p>
+                </div>
+                <div className="glass-card p-6 rounded-3xl text-center flex flex-col items-center gap-4 hover:border-neon-blue/40 transition-all group">
+                  <span className="material-symbols-outlined text-3xl text-blue-400 group-hover:scale-110 transition-transform">school</span>
+                  <p className="text-xs font-black uppercase tracking-widest leading-tight">Education</p>
+                </div>
+                <div className="glass-card p-6 rounded-3xl text-center flex flex-col items-center gap-4 hover:border-neon-blue/40 transition-all group">
+                  <span className="material-symbols-outlined text-3xl text-yellow-400 group-hover:scale-110 transition-transform">account_balance_wallet</span>
+                  <p className="text-xs font-black uppercase tracking-widest leading-tight">FinTech</p>
+                </div>
+                <div className="glass-card p-6 rounded-3xl text-center flex flex-col items-center gap-4 hover:border-neon-blue/40 transition-all group">
+                  <span className="material-symbols-outlined text-3xl text-emerald-400 group-hover:scale-110 transition-transform">location_city</span>
+                  <p className="text-xs font-black uppercase tracking-widest leading-tight">Smart Cities</p>
+                </div>
+                <div className="glass-card p-6 rounded-3xl text-center flex flex-col items-center gap-4 hover:border-neon-blue/40 transition-all group">
+                  <span className="material-symbols-outlined text-3xl text-orange-400 group-hover:scale-110 transition-transform">agriculture</span>
+                  <p className="text-xs font-black uppercase tracking-widest leading-tight">Agriculture</p>
+                </div>
+                <div className="glass-card p-6 rounded-3xl text-center flex flex-col items-center gap-4 hover:border-neon-blue/40 transition-all group">
+                  <span className="material-symbols-outlined text-3xl text-purple-400 group-hover:scale-110 transition-transform">precision_manufacturing</span>
+                  <p className="text-xs font-black uppercase tracking-widest leading-tight">Business Automation</p>
+                </div>
+                <div className="glass-card p-6 rounded-3xl text-center flex flex-col items-center gap-4 hover:border-neon-blue/40 transition-all group">
+                  <span className="material-symbols-outlined text-3xl text-pink-400 group-hover:scale-110 transition-transform">diversity_1</span>
+                  <p className="text-xs font-black uppercase tracking-widest leading-tight">Social Impact</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-24 px-4 bg-white/2 border-y border-white/5">
+            <div className="max-w-6xl mx-auto px-4">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-black mb-4 uppercase tracking-tighter text-white">How to Get Started</h2>
+                <p className="text-gray-500 font-medium">Follow these 4 steps to submit your idea for Buildathon 2026</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="glass-card p-8 rounded-3xl relative overflow-hidden group hover:border-neon-blue/40 transition-all">
+                  <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span className="text-6xl font-black italic">01</span>
+                  </div>
+                  <h4 className="text-lg font-black mb-4 uppercase tracking-tight text-white">Download</h4>
+                  <p className="text-xs text-gray-400 leading-relaxed mb-6">Get the official DOCX or PPTX template to structure your project proposal.</p>
+                  <div className="flex flex-col gap-2">
+                    <a href="/formats/Buildathon-formate.docx" download className="flex items-center gap-2 text-[8px] font-black uppercase tracking-widest bg-white/5 hover:bg-neon-blue hover:text-black p-2 rounded-lg transition-all">
+                      <span className="material-symbols-outlined text-sm">description</span>
+                      DOCX Format
+                    </a>
+                    <a href="/formats/Buildathon-formate.pptx" download className="flex items-center gap-2 text-[8px] font-black uppercase tracking-widest bg-white/5 hover:bg-neon-blue hover:text-black p-2 rounded-lg transition-all">
+                      <span className="material-symbols-outlined text-sm">slideshow</span>
+                      PPTX Format
+                    </a>
+                  </div>
+                </div>
+                <div className="glass-card p-8 rounded-3xl relative overflow-hidden group">
+                   <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span className="text-6xl font-black italic">02</span>
+                  </div>
+                  <h4 className="text-lg font-black mb-4 uppercase tracking-tight text-white">Prepare</h4>
+                  <p className="text-xs text-gray-400 leading-relaxed">Draft your idea, architecture, and tech stack using the templates provided.</p>
+                </div>
+                <div className="glass-card p-8 rounded-3xl relative overflow-hidden group">
+                   <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span className="text-6xl font-black italic">03</span>
+                  </div>
+                  <h4 className="text-lg font-black mb-4 uppercase tracking-tight text-white">PDF Export</h4>
+                  <p className="text-xs text-gray-400 leading-relaxed">Save your final proposal as a PDF for submission. Only PDF abstracts are allowed.</p>
+                </div>
+                <div className="glass-card p-8 rounded-3xl relative overflow-hidden group">
+                   <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <span className="text-6xl font-black italic">04</span>
+                  </div>
+                  <h4 className="text-lg font-black mb-4 uppercase tracking-tight text-white">Register</h4>
+                  <p className="text-xs text-gray-400 leading-relaxed mb-6">Click on Register Now and upload your PDF and GitHub repo link.</p>
+                  <Link to="/hackathons/submit" className="inline-block text-[9px] font-black text-center bg-neon-blue text-black p-2 rounded-lg py-3 uppercase tracking-widest hover:scale-105 transition-all">Go to Portal →</Link>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-24 px-4">
+            <div className="max-w-6xl mx-auto glass-card rounded-[3.5rem] p-12 md:p-16 border-neon-blue/20 relative overflow-hidden">
+              <div className="absolute -right-32 -bottom-32 w-96 h-96 bg-neon-blue/5 rounded-full blur-[100px]"></div>
+              <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                  <span className="bg-primary/20 text-primary text-[10px] font-black tracking-[0.3em] uppercase px-4 py-1.5 rounded-full mb-6 inline-block">Leadership Opportunity</span>
+                  <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight uppercase tracking-tight text-white">Become a Campus Ambassador</h2>
+                  <p className="text-gray-400 mb-10 text-lg">Lead the innovation wave in your college and earn exclusive rewards for your leadership and community impact.</p>
+                  <div className="space-y-6 mb-12">
+                    <div className="flex items-start gap-4">
+                      <div className="mt-1 w-6 h-6 rounded-full bg-neon-blue/10 flex items-center justify-center shrink-0">
+                        <span className="material-symbols-outlined text-neon-blue text-sm">redeem</span>
+                      </div>
+                      <p className="text-gray-200 font-bold">Complementary goodies to every campus ambassador with 6+ registrations</p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="mt-1 w-6 h-6 rounded-full bg-neon-blue/10 flex items-center justify-center shrink-0">
+                        <span className="material-symbols-outlined text-neon-blue text-sm">workspace_premium</span>
+                      </div>
+                      <p className="text-gray-200 font-bold">Certificates and shortlisted for internship interview</p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="mt-1 w-6 h-6 rounded-full bg-neon-blue/10 flex items-center justify-center shrink-0">
+                        <span className="material-symbols-outlined text-neon-blue text-sm">paid</span>
+                      </div>
+                      <p className="text-gray-200 font-bold">Cash rewards and goodies for top performers</p>
+                    </div>
+                  </div>
+                  <a className="inline-block bg-white text-black px-12 py-5 rounded-full font-black hover:bg-neon-blue hover:text-black transition-all uppercase tracking-widest shadow-xl" href="https://wa.me/918421812027">
+                    APPLY NOW
+                  </a>
+                </div>
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-neon-blue/10 rounded-[2.5rem] blur-2xl group-hover:blur-3xl transition-all"></div>
+                  <img alt="Ambassador Program" className="relative rounded-[2.5rem] border border-white/10 grayscale hover:grayscale-0 transition-all duration-1000 w-full object-cover h-[500px]" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"/>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-24 px-4 max-w-4xl mx-auto">
+            <h2 className="text-5xl font-black text-center mb-16 uppercase tracking-tight text-white">Frequently Asked Questions</h2>
+            <div className="space-y-4">
+              <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
+                <h4 className="text-xl font-black mb-3 text-white">Is the hackathon online?</h4>
+                <p className="text-gray-400 leading-relaxed font-medium">Yes, it's all online. You can build from anywhere and compete everywhere using our digital platform.</p>
+              </div>
+              <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
+                <h4 className="text-xl font-black mb-3 text-white">What is the refund policy?</h4>
+                <p className="text-gray-400 leading-relaxed font-medium">The registration fee is refundable only if the event is cancelled by the organization.</p>
+              </div>
+              <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
+                <h4 className="text-xl font-black mb-3 text-white">Who can participate?</h4>
+                <p className="text-gray-400 leading-relaxed font-medium">Beginners from Diploma, BTech, MCA, and other related tech backgrounds can participate. We welcome all passionate builders.</p>
+              </div>
+              <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
+                <h4 className="text-xl font-black mb-3 text-white">Are AI tools allowed?</h4>
+                <p className="text-gray-400 leading-relaxed font-medium">Yes, AI tools are allowed. We encourage the use of ChatGPT, Copilot, etc., as long as you can explain your work.</p>
+              </div>
+              <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
+                <h4 className="text-xl font-black mb-3 text-white">Will I get a certificate?</h4>
+                <p className="text-gray-400 leading-relaxed font-medium">Yes, participation certificates will be provided for all participants who successfully submit their projects.</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-32 px-4 relative overflow-hidden">
+            <div className="absolute inset-0 bg-primary/10 -z-10"></div>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-full bg-gradient-to-b from-primary/5 to-transparent blur-3xl -z-10"></div>
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-6xl md:text-7xl font-black mb-8 leading-tight text-white">Ready to Build?</h2>
+              <p className="text-2xl md:text-3xl text-neon-blue font-bold mb-14 uppercase tracking-[0.2em]">Registrations Closing Soon</p>
+              <Link to="/hackathons/submit" className="inline-block bg-neon-blue text-black px-20 py-8 rounded-full text-2xl font-black shadow-[0_0_40px_rgba(0,242,255,0.4)] hover:shadow-[0_0_70px_rgba(0,242,255,0.6)] hover:scale-110 transition-all uppercase tracking-widest">
+                REGISTER NOW
+              </Link>
+            </div>
+          </section>
+        </main>
+
+        <footer className="bg-black py-20 border-t border-white/10 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+              <div>
+                <div className="flex items-center gap-3 text-neon-blue mb-8">
+                  <span className="material-symbols-outlined text-4xl font-black">rocket_launch</span>
+                  <h2 className="text-3xl font-black tracking-tight text-white uppercase">R Tech Solutions</h2>
+                </div>
+                <p className="text-gray-500 max-w-md text-lg leading-relaxed mb-6">
+                  Leading the charge in software engineering excellence. Web & App Development | AI/ML Solutions based in India. Real Company, Real Projects, Real Judging.
+                </p>
+                <div className="mb-10 p-4 bg-white rounded-xl inline-block">
+                  <p className="text-[8px] font-black text-black uppercase tracking-[0.2em] mb-2 opacity-60">Registered & Certified by</p>
+                  <img src="/assets/msme-logo.png" alt="MSME Logo" className="h-12 w-auto object-contain" />
+                </div>
+                <div className="flex flex-col gap-6">
+                  <div className="flex items-center gap-5 group">
+                    <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center group-hover:bg-neon-blue group-hover:text-black transition-all">
+                      <span className="material-symbols-outlined text-xl">call</span>
+                    </div>
+                    <div>
+                      <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Support Line</p>
+                      <p className="text-xl font-bold">+91 8421812027</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-5 group">
+                    <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center group-hover:bg-neon-blue group-hover:text-black transition-all">
+                      <span className="material-symbols-outlined text-xl">mail</span>
+                    </div>
+                    <div>
+                      <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Official Email</p>
+                      <p className="text-xl font-bold">buildathon@rtech.solutions</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col justify-end">
+                <div className="glass-card p-10 rounded-[2.5rem] border-white/5 text-center md:text-left">
+                  <h4 className="text-2xl font-black mb-6 uppercase text-white">Legal & Social</h4>
+                  <div className="grid grid-cols-2 gap-8 text-gray-400">
+                    <div className="space-y-4">
+                      <Link to="/privacy-policy" className="block hover:text-neon-blue transition-colors font-bold uppercase text-xs tracking-widest">Privacy Policy</Link>
+                      <Link to="/terms-conditions" className="block hover:text-neon-blue transition-colors font-bold uppercase text-xs tracking-widest">Terms of Service</Link>
+                    </div>
+                    <div className="space-y-4">
+                      <a className="block hover:text-neon-blue transition-colors font-bold uppercase text-xs tracking-widest" href="#">LinkedIn</a>
+                      <a className="block hover:text-neon-blue transition-colors font-bold uppercase text-xs tracking-widest" href="#">Instagram</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+              <p className="text-sm text-gray-600 font-medium">© 2026 R Tech Solutions India. All Rights Reserved.</p>
+              <div className="flex items-center gap-3">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                <span className="text-[10px] font-black text-gray-600 uppercase tracking-widest">Official Event Landing Page</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  );
+};
+
+export default HackathonLanding;

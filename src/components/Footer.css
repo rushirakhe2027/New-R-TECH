@@ -1,0 +1,66 @@
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  background-color: var(--white);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.msme-badge img {
+  height: 40px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.msme-badge img:hover {
+  opacity: 1;
+}
+
+.logo-icon-small {
+  width: 24px;
+  height: 24px;
+  background: var(--primary);
+  border-radius: 6px;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  color: var(--text-light);
+}
+
+.footer-socials a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
