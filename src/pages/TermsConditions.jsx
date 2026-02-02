@@ -153,7 +153,7 @@ const TermsConditions = () => {
               For questions regarding these Terms and Conditions, please contact:
             </p>
             <div className="space-y-2">
-              <p className="text-white font-bold">Email: buildathon@rtech.solutions</p>
+              <p className="text-white font-bold">Email: support@rtechsolutions.online</p>
               <p className="text-white font-bold">Phone: +91 8421812027</p>
               <p className="text-white font-bold">WhatsApp: <a href="https://wa.me/918421812027" className="text-neon-blue hover:underline">+91 8421812027</a></p>
             </div>

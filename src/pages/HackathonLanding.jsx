@@ -566,7 +566,7 @@ const HackathonLanding = () => {
                     </div>
                     <div>
                       <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Official Email</p>
-                      <p className="text-xl font-bold">buildathon@rtech.solutions</p>
+                      <p className="text-xl font-bold">support@rtechsolutions.online</p>
                     </div>
                   </div>
                 </div>

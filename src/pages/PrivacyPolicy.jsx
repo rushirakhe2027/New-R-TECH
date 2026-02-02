@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
           <section className="glass-card p-8 rounded-3xl">
             <h2 className="text-2xl font-black mb-4 uppercase tracking-tight">Your Rights</h2>
             <p className="text-gray-400 leading-relaxed mb-4">
-              You have the right to access, update, or delete your personal information at any time. To exercise these rights, please contact us at buildathon@rtech.solutions.
+              You have the right to access, update, or delete your personal information at any time. To exercise these rights, please contact us at support@rtechsolutions.online.
             </p>
           </section>
 
@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
               If you have any questions about this Privacy Policy, please contact us:
             </p>
             <div className="space-y-2">
-              <p className="text-white font-bold">Email: buildathon@rtech.solutions</p>
+              <p className="text-white font-bold">Email: support@rtechsolutions.online</p>
               <p className="text-white font-bold">Phone: +91 8421812027</p>
             </div>
           </section>
