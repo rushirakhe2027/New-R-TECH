@@ -63,21 +63,57 @@ const HackathonLanding = () => {
               <div className="flex flex-wrap justify-center gap-8 mb-16">
                 <div className="glass-card p-8 rounded-3xl min-w-[340px] text-left border-neon-blue/20 hover:border-neon-blue/50 transition-all duration-500">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="material-symbols-outlined text-neon-blue">payments</span>
-                    <span className="text-neon-blue text-xs font-black uppercase tracking-widest">Grand Prize Pool</span>
+                    <span className="material-symbols-outlined text-neon-blue">workspace_premium</span>
+                    <span className="text-neon-blue text-xs font-black uppercase tracking-widest">Prize Distribution</span>
                   </div>
-                  <p className="text-3xl font-black text-white mb-2 leading-tight">₹30,000 Direct Cash</p>
-                  <p className="text-sm text-gray-400 mb-2 italic">And for top performers have chance to win internship + goodies</p>
-                  <p className="text-[11px] text-primary font-bold uppercase tracking-wider">(Scales with Registrations)</p>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-2">
+                        <span className="text-2xl">🥇</span>
+                        <span className="font-bold text-white">Winner</span>
+                      </div>
+                      <span className="text-2xl font-black text-neon-blue">₹15,000</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl">🥈</span>
+                        <span className="text-gray-300 font-bold">1st Runner-Up</span>
+                      </div>
+                      <span className="text-xl font-bold text-white">₹10,000</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-2">
+                        <span className="text-lg">🥉</span>
+                        <span className="text-gray-400 font-bold">2nd Runner-Up</span>
+                      </div>
+                      <span className="text-lg font-bold text-white">₹5,000</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-white/5">
+                    <p className="text-[10px] text-primary font-black uppercase tracking-widest leading-loose">
+                      Total Prize Pool: ₹30,000 <br/>
+                      + Internship & LOR Opportunities
+                    </p>
+                  </div>
                 </div>
                 <div className="glass-card p-8 rounded-3xl min-w-[340px] text-left border-white/10 hover:border-white/20 transition-all duration-500">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="material-symbols-outlined text-primary">groups</span>
-                    <span className="text-primary text-xs font-black uppercase tracking-widest">Entry Details</span>
+                    <span className="text-primary text-xs font-black uppercase tracking-widest">Entry & Eligibility</span>
                   </div>
-                  <p className="text-3xl font-black text-white mb-2 leading-tight">₹500 Per Team</p>
-                  <p className="text-sm text-gray-400 mb-2">Team Size: 1-4 Members / solo allowed</p>
-                  <p className="text-[11px] text-gray-500 font-bold uppercase tracking-wider">Open to BTech, Diploma, MCA</p>
+                  <div className="space-y-4 mb-6">
+                    <div>
+                      <p className="text-xs text-gray-500 font-bold uppercase tracking-widest mb-1">Registration Fees</p>
+                      <p className="text-xl font-black text-white">Idea Submission: <span className="text-green-400 uppercase">Free</span></p>
+                      <p className="text-sm text-gray-400">Final (Shortlisted): ₹500/Team</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 font-bold uppercase tracking-widest mb-1">Who can join?</p>
+                      <p className="text-sm text-white font-bold uppercase tracking-tight">Open to Students across India</p>
+                      <p className="text-xs text-gray-400 mt-1 italic leading-tight">Cross-college teams are allowed</p>
+                    </div>
+                  </div>
+                  <p className="text-[11px] text-gray-500 font-bold uppercase tracking-wider">Team Size: 1-4 Members</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row items-center justify-center gap-8">
@@ -157,23 +193,45 @@ const HackathonLanding = () => {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-4xl font-black mb-8 uppercase tracking-tight text-white">Tech Stack</h2>
-                  <div className="flex flex-wrap gap-4">
-                    <span className="bg-white/5 border border-white/10 px-6 py-3 rounded-xl font-bold text-sm">Android / Java</span>
-                    <span className="bg-white/5 border border-white/10 px-6 py-3 rounded-xl font-bold text-sm">Web / MERN Stack</span>
-                    <span className="bg-white/5 border border-white/10 px-6 py-3 rounded-xl font-bold text-sm">AI-ML / Python</span>
-                  </div>
-                  <div className="mt-8 p-8 bg-neon-blue/5 border border-neon-blue/20 rounded-[2rem]">
-                    <h3 className="font-black text-xl mb-4 flex items-center gap-2 text-neon-blue">
-                      <span className="material-symbols-outlined">smart_toy</span>
-                      AI Usage Policy
-                    </h3>
-                    <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                      <strong className="text-white">AI is NOT compulsory.</strong> However, meaningful AI integration will be given higher consideration in final scoring.
-                    </p>
-                    <p className="text-gray-400 text-xs leading-relaxed">
-                      Use of AI tools (ChatGPT, Copilot etc.) is allowed, but teams must demonstrate thorough understanding of their implementation during the demo.
-                    </p>
+                  <h2 className="text-4xl font-black mb-8 uppercase tracking-tight text-white">Eligibility & Tech</h2>
+                  <div className="space-y-6">
+                    <div className="glass-card p-6 rounded-2xl border-neon-blue/20 bg-neon-blue/5">
+                      <h4 className="text-neon-blue text-xs font-black uppercase tracking-widest mb-4 flex items-center gap-2">
+                        <span className="material-symbols-outlined text-sm">verified_user</span>
+                        Eligibility Criteria
+                      </h4>
+                      <ul className="space-y-3">
+                        {[
+                          'Open to all UG/PG students & recent graduates.',
+                          'Individual or team (1-4 members) registration.',
+                          'Each participant can join only one team.',
+                          'Must work on original ideas/code during event.',
+                          'Basic knowledge of Web, App, or AI/ML.',
+                          'Must have laptop & stable internet connection.'
+                        ].map((rule, idx) => (
+                          <li key={idx} className="flex gap-2 items-start text-[11px] font-medium text-gray-300">
+                            <span className="text-neon-blue">▹</span>
+                            {rule}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-3">
+                      <span className="bg-white/5 border border-white/10 px-4 py-2 rounded-xl font-bold text-[11px] uppercase tracking-wider">Android / Java</span>
+                      <span className="bg-white/5 border border-white/10 px-4 py-2 rounded-xl font-bold text-[11px] uppercase tracking-wider">Web / MERN Stack</span>
+                      <span className="bg-white/5 border border-white/10 px-4 py-2 rounded-xl font-bold text-[11px] uppercase tracking-wider">AI-ML / Python</span>
+                    </div>
+
+                    <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                      <h3 className="font-black text-sm mb-3 flex items-center gap-2 text-white uppercase tracking-widest">
+                        <span className="material-symbols-outlined text-neon-blue text-base">smart_toy</span>
+                        AI Usage Policy
+                      </h3>
+                      <p className="text-gray-400 text-[11px] leading-relaxed">
+                        <strong className="text-white">AI is NOT compulsory.</strong> However, meaningful AI integration will be given higher consideration in scoring. Use of tools like ChatGPT is allowed if explained well.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -239,6 +297,70 @@ const HackathonLanding = () => {
                         <div className="h-full bg-primary w-[5%]"></div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-24 px-4 bg-background-dark">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <span className="text-neon-blue text-xs font-black uppercase tracking-[0.3em] mb-4 inline-block">Roadmap to Glory</span>
+                <h2 className="text-5xl font-black uppercase tracking-tighter text-white">Event Timeline 2026</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="glass-card p-8 rounded-[2rem] border-white/5 hover:border-neon-blue/30 transition-all group">
+                  <div className="mb-6">
+                    <span className="text-neon-blue font-black text-sm uppercase tracking-widest block mb-2">Phase 01</span>
+                    <p className="text-xs text-gray-500 font-bold">1 Feb – 28 Feb</p>
+                  </div>
+                  <h4 className="text-xl font-black text-white mb-3 uppercase leading-tight">Idea Submission</h4>
+                  <p className="text-sm text-gray-400 leading-relaxed">Free entry for all students. Submit your vision using the provided templates.</p>
+                </div>
+                <div className="glass-card p-8 rounded-[2rem] border-white/5 hover:border-neon-blue/30 transition-all group">
+                  <div className="mb-6">
+                    <span className="text-primary font-black text-sm uppercase tracking-widest block mb-2">Phase 02</span>
+                    <p className="text-xs text-gray-500 font-bold">1 Mar – 7 Mar</p>
+                  </div>
+                  <h4 className="text-xl font-black text-white mb-3 uppercase leading-tight">Evaluation</h4>
+                  <p className="text-sm text-gray-400 leading-relaxed">Our panel reviews submissions. Shortlisted teams move to the final stage.</p>
+                </div>
+                <div className="glass-card p-8 rounded-[2rem] border-white/5 hover:border-neon-blue/30 transition-all group">
+                  <div className="mb-6">
+                    <span className="text-indigo-400 font-black text-sm uppercase tracking-widest block mb-2">Phase 03</span>
+                    <p className="text-xs text-gray-500 font-bold">8 Mar – 15 Mar</p>
+                  </div>
+                  <h4 className="text-xl font-black text-white mb-3 uppercase leading-tight">Final Reg</h4>
+                  <p className="text-sm text-gray-400 leading-relaxed">Shortlisted teams confirm participation with a ₹500 registration fee.</p>
+                </div>
+                <div className="glass-card p-8 rounded-[2rem] border-neon-blue/50 bg-neon-blue/5 shadow-[0_0_30px_rgba(0,242,255,0.05)] transition-all group">
+                  <div className="mb-6">
+                    <span className="text-white font-black text-sm uppercase tracking-widest block mb-2">Phase 04</span>
+                    <p className="text-xs text-gray-500 font-bold uppercase tracking-widest">End of March</p>
+                  </div>
+                  <h4 className="text-xl font-black text-neon-blue mb-3 uppercase leading-tight">Final Demos</h4>
+                  <p className="text-sm text-gray-300 leading-relaxed font-bold">Live presentations, project judging, and grand prize distribution.</p>
+                </div>
+              </div>
+
+              <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="glass-card p-10 rounded-[2.5rem] border-white/5 flex items-center gap-8 group hover:bg-white/5 transition-all">
+                  <div className="w-20 h-20 rounded-3xl bg-neon-blue/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-neon-blue text-4xl">emoji_events</span>
+                  </div>
+                  <div>
+                    <h4 className="text-2xl font-black text-white uppercase mb-2">Recognition</h4>
+                    <p className="text-gray-400 text-sm leading-relaxed">Certificates for <span className="text-white font-black italic underline decoration-neon-blue">ALL</span> final presenters. Special goodies for top teams.</p>
+                  </div>
+                </div>
+                <div className="glass-card p-10 rounded-[2.5rem] border-white/5 flex items-center gap-8 group hover:bg-white/5 transition-all">
+                  <div className="w-20 h-20 rounded-3xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-primary text-4xl">trending_up</span>
+                  </div>
+                  <div>
+                    <h4 className="text-2xl font-black text-white uppercase mb-2">Growth</h4>
+                    <p className="text-gray-400 text-sm leading-relaxed">Top performers have high chance to get <span className="text-white font-black">LOR</span> and <span className="text-white font-black">Internship</span> opportunities.</p>
                   </div>
                 </div>
               </div>
@@ -378,24 +500,24 @@ const HackathonLanding = () => {
             <h2 className="text-5xl font-black text-center mb-16 uppercase tracking-tight text-white">Frequently Asked Questions</h2>
             <div className="space-y-4">
               <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
-                <h4 className="text-xl font-black mb-3 text-white">Is the hackathon online?</h4>
-                <p className="text-gray-400 leading-relaxed font-medium">Yes, it's all online. You can build from anywhere and compete everywhere using our digital platform.</p>
+                <h4 className="text-xl font-black mb-3 text-white">How does the selection process work?</h4>
+                <p className="text-gray-400 leading-relaxed font-medium">The hackathon has two stages: First, submit your idea for <span className="text-white">FREE</span>. After evaluation, shortlisted teams will pay a nominal <span className="text-white">₹500 registration fee</span> to compete in the final round.</p>
               </div>
               <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
-                <h4 className="text-xl font-black mb-3 text-white">What is the refund policy?</h4>
-                <p className="text-gray-400 leading-relaxed font-medium">The registration fee is refundable only if the event is cancelled by the organization.</p>
+                <h4 className="text-xl font-black mb-3 text-white">Is the hackathon online?</h4>
+                <p className="text-gray-400 leading-relaxed font-medium">Yes, the entire event—from idea submission to final presentations—is 100% online. You can participate from anywhere in India.</p>
               </div>
               <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
                 <h4 className="text-xl font-black mb-3 text-white">Who can participate?</h4>
-                <p className="text-gray-400 leading-relaxed font-medium">Beginners from Diploma, BTech, MCA, and other related tech backgrounds can participate. We welcome all passionate builders.</p>
+                <p className="text-gray-400 leading-relaxed font-medium">The event is open to students across India. We welcome participants from diploma, undergraduate (BTech/BCA), and postgraduate (MCA/MTech) backgrounds. Cross-college teams are encouraged!</p>
               </div>
               <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
                 <h4 className="text-xl font-black mb-3 text-white">Are AI tools allowed?</h4>
-                <p className="text-gray-400 leading-relaxed font-medium">Yes, AI tools are allowed. We encourage the use of ChatGPT, Copilot, etc., as long as you can explain your work.</p>
+                <p className="text-gray-400 leading-relaxed font-medium">Absolutely. We encourage the use of AI tools (ChatGPT, GitHub Copilot, etc.) to enhance your productivity, as long as you can explain the core logic of your implementation.</p>
               </div>
               <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-white/10 transition-all">
                 <h4 className="text-xl font-black mb-3 text-white">Will I get a certificate?</h4>
-                <p className="text-gray-400 leading-relaxed font-medium">Yes, participation certificates will be provided for all participants who successfully submit their projects.</p>
+                <p className="text-gray-400 leading-relaxed font-medium">Yes, all teams that reach the final presentation stage will receive an official participation certificate. Top performers will also receive goodies and internship opportunities.</p>
               </div>
             </div>
           </section>
