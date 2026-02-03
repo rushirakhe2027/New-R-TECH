@@ -50,7 +50,7 @@ const HackathonLanding = () => {
                   <span className="text-white font-black tracking-[0.4em] uppercase text-sm">R Tech Solutions Presents</span>
                 </div>
                 <div className="bg-neon-blue/10 border border-neon-blue/30 backdrop-blur-md px-8 py-2.5 rounded-full shadow-[0_0_15px_rgba(0,242,255,0.1)]">
-                  <span className="text-neon-blue text-xs font-black tracking-widest uppercase">36-Hour Online Hackathon</span>
+                  <span className="text-neon-blue text-xs font-black tracking-widest uppercase">Online Hackathon</span>
                 </div>
               </div>
               <h1 className="text-5xl md:text-[8rem] lg:text-[9rem] font-black tracking-tighter mb-8 leading-[0.9] text-white">
@@ -171,7 +171,7 @@ const HackathonLanding = () => {
                       <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mb-3">Event Window</p>
                       <div className="flex items-center gap-3">
                         <span className="material-symbols-outlined text-neon-blue">schedule</span>
-                        <p className="text-xl font-bold">36 Hours</p>
+                        <p className="text-xl font-bold">Online Event</p>
                       </div>
                       <p className="text-[10px] text-gray-500 mt-2 italic font-medium">After confirmation mail</p>
                     </div>

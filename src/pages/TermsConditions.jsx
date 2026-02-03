@@ -83,7 +83,7 @@ const TermsConditions = () => {
           <section className="glass-card p-8 rounded-3xl">
             <h2 className="text-2xl font-black mb-4 uppercase tracking-tight">Project Originality</h2>
             <p className="text-gray-400 leading-relaxed mb-4">
-              All projects must be original work created during the 36-hour hackathon window. Pre-existing projects or projects started before the official start time are strictly prohibited.
+              All projects must be original work created during the hackathon window. Pre-existing projects or projects started before the official start time are strictly prohibited.
             </p>
             <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-xl">
               <p className="text-red-400 font-bold text-sm">

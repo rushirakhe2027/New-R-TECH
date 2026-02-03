@@ -129,8 +129,8 @@ const HackathonRules = () => {
                   <div className="hidden md:block w-px h-24 bg-white/10"></div>
                   <div className="text-center md:text-left">
                     <p className="text-sm font-black text-primary uppercase tracking-[0.2em] mb-2">Duration</p>
-                    <p className="text-2xl font-black">36 HOURS</p>
-                    <p className="text-xs text-gray-500 mt-1 italic font-medium">Timer starts after confirmation mail</p>
+                    <p className="text-2xl font-black">ONLINE EVENT</p>
+                    <p className="text-xs text-gray-500 mt-1 italic font-medium">Timeline shared via email</p>
                   </div>
                 </div>
               </div>
@@ -249,7 +249,7 @@ const HackathonRules = () => {
                     <span className="material-symbols-outlined">warning</span> Originality & Plagiarism
                   </h4>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    No pre-existing projects are allowed. Any team found using projects built prior to the 36-hour hackathon window will be <strong>disqualified immediately</strong> without refund. Code originality will be cross-verified using industry-standard tools.
+                    No pre-existing projects are allowed. Any team found using projects built prior to the hackathon window will be <strong>disqualified immediately</strong> without refund. Code originality will be cross-verified using industry-standard tools.
                   </p>
                 </div>
               </div>
