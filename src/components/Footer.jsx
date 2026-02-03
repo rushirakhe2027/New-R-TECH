@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container footer-container">
         <div className="footer-left">
           <div className="footer-logo">
-            <div className="logo-icon-small"></div>
+            <img src="/assets/r-tech-logo.png" alt="R Tech Solutions" className="h-6 w-auto" />
             <span>R Tech Solutions</span>
           </div>
           <div className="msme-badge">

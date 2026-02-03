@@ -120,9 +120,9 @@ const HackathonLanding = () => {
                 <Link to="/hackathons/submit" className="w-full sm:w-auto bg-neon-blue text-black px-8 md:px-16 py-4 md:py-6 rounded-full text-lg md:text-xl font-black shadow-[0_0_30px_rgba(0,242,255,0.4)] hover:shadow-[0_0_50px_rgba(0,242,255,0.6)] transition-all hover:scale-105 uppercase tracking-widest text-center">
                   REGISTER NOW
                 </Link>
-                <Link to="/hackathons/rules" className="w-full sm:w-auto border border-white/10 hover:border-white/30 hover:bg-white/5 text-white px-8 md:px-12 py-4 md:py-6 rounded-full text-lg font-bold transition-all text-center">
-                  View Rules
-                </Link>
+                <a href="#ambassador" className="w-full sm:w-auto border border-neon-blue/20 hover:border-neon-blue/50 bg-neon-blue/5 hover:bg-neon-blue/10 text-neon-blue px-8 md:px-12 py-4 md:py-6 rounded-full text-lg font-bold transition-all text-center uppercase tracking-widest shadow-[0_0_20px_rgba(0,242,255,0.1)]">
+                  Join as Campus Ambassador
+                </a>
               </div>
             </div>
           </section>

@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="container nav-container">
         <div className="logo">
-          <div className="logo-icon"></div>
+          <img src="/assets/r-tech-logo.png" alt="R Tech Solutions" className="h-8 w-auto" />
           <span>R Tech Solutions</span>
         </div>
 
