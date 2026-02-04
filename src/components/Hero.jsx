@@ -55,52 +55,24 @@ const Hero = () => {
           </div>
 
           <div className="hero-visual-elements">
-              <div className="floating-elements-container">
-                {/* Floating Service Icons */}
-                {[
-                  { icon: <Globe size={20} />, label: "Web Dev" },
-                  { icon: <Smartphone size={20} />, label: "App Dev" },
-                  { icon: <Cpu size={20} />, label: "AI & ML" },
-                  { icon: <Megaphone size={20} />, label: "Marketing" },
-                  { icon: <PenTool size={20} />, label: "UI/UX" }
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    className="floating-element glass-premium"
-                    initial={{ 
-                      x: Math.random() * 200 - 100, 
-                      y: Math.random() * 200 - 100 
-                    }}
-                    animate={{ 
-                      x: [Math.random() * 200 - 100, Math.random() * 200 - 100, Math.random() * 200 - 100],
-                      y: [Math.random() * 200 - 100, Math.random() * 200 - 100, Math.random() * 200 - 100],
-                      rotate: [0, 10, -10, 0]
-                    }}
-                    transition={{ 
-                      duration: 10 + Math.random() * 10, 
-                      repeat: Infinity, 
-                      repeatType: "reverse",
-                      ease: "easeInOut"
-                    }}
-                    style={{
-                      position: 'absolute',
-                      zIndex: 2,
-                      padding: '10px 16px',
-                      borderRadius: '50px',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      fontSize: '0.8rem',
-                      fontWeight: '700',
-                      background: 'rgba(255, 255, 255, 0.8)',
-                      boxShadow: '0 8px 32px rgba(0, 102, 255, 0.15)',
-                      whiteSpace: 'nowrap'
-                    }}
-                  >
-                    <div style={{ color: 'var(--primary)' }}>{item.icon}</div>
-                    <span>{item.label}</span>
-                  </motion.div>
-                ))}
+            <div className="floating-elements-container">
+              <motion.div 
+                className="floating-element fe-1 glass-premium"
+                animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
+                transition={{ duration: 5, repeat: Infinity }}
+              >
+                <div className="fe-icon ai"><Cpu size={18} /></div>
+                <span>AI Solutions</span>
+              </motion.div>
+              
+              <motion.div 
+                className="floating-element fe-2 glass-premium"
+                animate={{ y: [0, 20, 0], rotate: [0, -5, 0] }}
+                transition={{ duration: 4, repeat: Infinity, delay: 1 }}
+              >
+                <div className="fe-icon web"><Globe size={18} /></div>
+                <span>Web Ecosystems</span>
+              </motion.div>
 
               <div className="hero-main-visual">
                 <div className="visual-circle"></div>
