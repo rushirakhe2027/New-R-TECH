@@ -2,6 +2,7 @@
   --primary: #1E40AF; /* Pro Tech Blue */
   --primary-light: #3B82F6;
   --primary-dark: #1E3A8A;
+  --primary-hover: #153e75; /* Darker blue for hover */
   --accent: #F59E0B; /* Amber/Silver accents */
   --secondary: #0F172A;
   --text: #1E293B;
@@ -16,7 +17,7 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
-  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-main: 'Outfit', system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -129,6 +130,7 @@ button {
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
+  color: var(--white);
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 102, 255, 0.2);
 }
@@ -140,8 +142,9 @@ button {
 }
 
 .btn-outline:hover {
-  background-color: var(--bg-alt);
-  border-color: var(--text);
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
 }
 
 .badge {
