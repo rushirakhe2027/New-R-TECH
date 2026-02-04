@@ -18,10 +18,10 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="container nav-container">
-        <div className="logo">
+        <Link to="/" className="logo">
           <img src="/assets/r-tech-logo.png" alt="R Tech Solutions" className="h-8 w-auto" />
           <span>R Tech Solutions</span>
-        </div>
+        </Link>
 
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
           <div className="nav-menu">
@@ -30,7 +30,13 @@ const Navbar = () => {
             <Link to="/hackathons" onClick={() => setIsOpen(false)}>Hackathons</Link>
           </div>
           <div className="nav-right">
-            <a href="#contact" className="btn btn-primary nav-cta">Let's Talk</a>
+            <a 
+              href="#contact" 
+              className="btn btn-primary nav-cta" 
+              style={{ color: '#ffffff', fontWeight: '800' }}
+            >
+              Let's Talk
+            </a>
           </div>
         </div>
 
