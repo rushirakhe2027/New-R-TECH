@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MousePointer2, Briefcase, Zap, Globe, Smartphone, Cpu, Megaphone, PenTool } from 'lucide-react';
+import { MousePointer2, Briefcase, Zap, Globe, Smartphone, Cpu, Megaphone, PenTool, Laptop } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
 
@@ -56,22 +56,64 @@ const Hero = () => {
 
           <div className="hero-visual-elements">
             <div className="floating-elements-container">
+              {/* Service 1: AI (Top Right) */}
               <motion.div 
                 className="floating-element fe-1 glass-premium"
-                animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
-                transition={{ duration: 5, repeat: Infinity }}
+                animate={{ y: [0, -15, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
                 <div className="fe-icon ai"><Cpu size={18} /></div>
                 <span>AI Solutions</span>
               </motion.div>
               
+              {/* Service 2: Web (Bottom Left) */}
               <motion.div 
                 className="floating-element fe-2 glass-premium"
-                animate={{ y: [0, 20, 0], rotate: [0, -5, 0] }}
-                transition={{ duration: 4, repeat: Infinity, delay: 1 }}
+                animate={{ y: [0, 15, 0] }}
+                transition={{ duration: 5, repeat: Infinity, delay: 0.5, ease: "easeInOut" }}
               >
                 <div className="fe-icon web"><Globe size={18} /></div>
-                <span>Web Ecosystems</span>
+                <span>Web Dev</span>
+              </motion.div>
+
+              {/* Service 3: App (Top Left) */}
+              <motion.div 
+                className="floating-element fe-3 glass-premium"
+                animate={{ y: [0, -12, 0] }}
+                transition={{ duration: 4.5, repeat: Infinity, delay: 1, ease: "easeInOut" }}
+              >
+                <div className="fe-icon app"><Smartphone size={18} /></div>
+                <span>App Dev</span>
+              </motion.div>
+
+              {/* Service 4: Marketing (Bottom Right) */}
+              <motion.div 
+                className="floating-element fe-4 glass-premium"
+                animate={{ y: [0, 12, 0] }}
+                transition={{ duration: 5.5, repeat: Infinity, delay: 1.5, ease: "easeInOut" }}
+              >
+                <div className="fe-icon mkt"><Megaphone size={18} /></div>
+                <span>Marketing</span>
+              </motion.div>
+
+              {/* Service 5: Projects (Left Center) */}
+              <motion.div 
+                className="floating-element fe-5 glass-premium"
+                animate={{ x: [0, -10, 0] }}
+                transition={{ duration: 6, repeat: Infinity, delay: 2, ease: "easeInOut" }}
+              >
+                <div className="fe-icon proj"><Laptop size={18} /></div>
+                <span>Projects</span>
+              </motion.div>
+
+              {/* Service 6: UI/UX (Right Center) */}
+              <motion.div 
+                className="floating-element fe-6 glass-premium"
+                animate={{ x: [0, 10, 0] }}
+                transition={{ duration: 6.5, repeat: Infinity, delay: 2.5, ease: "easeInOut" }}
+              >
+                <div className="fe-icon ui"><PenTool size={18} /></div>
+                <span>UI/UX</span>
               </motion.div>
 
               <div className="hero-main-visual">
