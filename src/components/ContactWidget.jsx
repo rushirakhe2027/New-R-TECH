@@ -136,8 +136,7 @@ const ContactWidget = () => {
             }}
             whileHover={{ x: -5 }}
           >
-            <ChevronLeft size={20} color="white" />
-            <MessageCircle size={20} color="#25D366" />
+            <ChevronLeft size={24} color="white" />
           </motion.div>
         )}
       </AnimatePresence>
