@@ -193,12 +193,12 @@
 }
 
 /* Specific colors for icons */
-.fe-icon.ai { background: #FF3366; }
-.fe-icon.web { background: #0066FF; }
-.fe-icon.app { background: #00C2FF; }
-.fe-icon.mkt { background: #FF9900; }
-.fe-icon.proj { background: #9D00FF; }
-.fe-icon.ui { background: #00D1FF; }
+.fe-icon.icon-ai { background: #FF3366; }
+.fe-icon.icon-web { background: #0066FF; }
+.fe-icon.icon-app { background: #00C2FF; }
+.fe-icon.icon-mkt { background: #FF9900; }
+.fe-icon.icon-proj { background: #9D00FF; }
+.fe-icon.icon-ui { background: #00D1FF; }
 
 @media (max-width: 1200px) {
     .hero-title { font-size: 3.5rem; }

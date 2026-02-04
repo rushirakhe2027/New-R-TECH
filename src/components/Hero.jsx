@@ -59,20 +59,20 @@ const Hero = () => {
               {/* Service 1: AI (Top Right) */}
               <motion.div 
                 className="floating-element fe-1 glass-premium"
-                animate={{ y: [0, -15, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
+                transition={{ duration: 5, repeat: Infinity }}
               >
-                <div className="fe-icon ai"><Cpu size={18} /></div>
+                <div className="fe-icon icon-ai"><Cpu size={18} /></div>
                 <span>AI Solutions</span>
               </motion.div>
               
               {/* Service 2: Web (Bottom Left) */}
               <motion.div 
                 className="floating-element fe-2 glass-premium"
-                animate={{ y: [0, 15, 0] }}
-                transition={{ duration: 5, repeat: Infinity, delay: 0.5, ease: "easeInOut" }}
+                animate={{ y: [0, 20, 0], rotate: [0, -5, 0] }}
+                transition={{ duration: 4, repeat: Infinity, delay: 1 }}
               >
-                <div className="fe-icon web"><Globe size={18} /></div>
+                <div className="fe-icon icon-web"><Globe size={18} /></div>
                 <span>Web Dev</span>
               </motion.div>
 
@@ -82,7 +82,7 @@ const Hero = () => {
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 4.5, repeat: Infinity, delay: 1, ease: "easeInOut" }}
               >
-                <div className="fe-icon app"><Smartphone size={18} /></div>
+                <div className="fe-icon icon-app"><Smartphone size={18} /></div>
                 <span>App Dev</span>
               </motion.div>
 
@@ -92,7 +92,7 @@ const Hero = () => {
                 animate={{ y: [0, 12, 0] }}
                 transition={{ duration: 5.5, repeat: Infinity, delay: 1.5, ease: "easeInOut" }}
               >
-                <div className="fe-icon mkt"><Megaphone size={18} /></div>
+                <div className="fe-icon icon-mkt"><Megaphone size={18} /></div>
                 <span>Marketing</span>
               </motion.div>
 
@@ -102,7 +102,7 @@ const Hero = () => {
                 animate={{ x: [0, -10, 0] }}
                 transition={{ duration: 6, repeat: Infinity, delay: 2, ease: "easeInOut" }}
               >
-                <div className="fe-icon proj"><Laptop size={18} /></div>
+                <div className="fe-icon icon-proj"><Laptop size={18} /></div>
                 <span>Projects</span>
               </motion.div>
 
@@ -112,7 +112,7 @@ const Hero = () => {
                 animate={{ x: [0, 10, 0] }}
                 transition={{ duration: 6.5, repeat: Infinity, delay: 2.5, ease: "easeInOut" }}
               >
-                <div className="fe-icon ui"><PenTool size={18} /></div>
+                <div className="fe-icon icon-ui"><PenTool size={18} /></div>
                 <span>UI/UX</span>
               </motion.div>
 
