@@ -42,16 +42,19 @@ const HackathonLanding = () => {
               <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-neon-blue/10 rounded-full blur-[140px]"></div>
             </div>
             <div className="relative z-10 w-full max-w-6xl text-center">
-              <div className="inline-flex flex-col items-center gap-4 mb-10">
-                <div className="flex items-center gap-4 text-neon-blue mb-2">
+                <div className="flex flex-col items-center gap-6 text-neon-blue mb-2">
                   <img 
                     src="/assets/r-tech-logo.png" 
                     alt="R Tech Solutions Logo" 
-                    className="h-16 w-auto object-contain drop-shadow-[0_0_15px_rgba(0,102,255,0.8)] filter brightness-125"
+                    className="h-24 w-auto object-contain drop-shadow-[0_0_20px_rgba(0,102,255,0.8)] filter brightness-125 hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="text-white font-black tracking-[0.3em] uppercase text-sm border-l-2 border-neon-blue pl-4 py-2">
-                    R Tech Solutions Presents
-                  </span>
+                  <div className="flex items-center gap-4">
+                    <div className="h-[2px] w-12 bg-neon-blue/50"></div>
+                    <span className="text-white font-black tracking-[0.3em] uppercase text-sm md:text-base">
+                      R Tech Solutions Presents
+                    </span>
+                    <div className="h-[2px] w-12 bg-neon-blue/50"></div>
+                  </div>
                 </div>
                 <div className="bg-neon-blue/10 border border-neon-blue/30 backdrop-blur-md px-8 py-2.5 rounded-full shadow-[0_0_15px_rgba(0,242,255,0.1)]">
                   <span className="text-neon-blue text-xs font-black tracking-widest uppercase">Online Hackathon</span>
