@@ -13,7 +13,8 @@ import HackathonRules from './pages/HackathonRules';
 import HackathonSubmission from './pages/HackathonSubmission';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
-import Portfolio from './components/Portfolio';
+import Careers from './pages/Careers';
+import FAQ from './pages/FAQ';
 import ContactForm from './components/ContactForm';
 import './App.css';
 
@@ -24,7 +25,6 @@ const MainLayout = () => (
     <Stats />
     <About />
     <Services />
-    <Portfolio />
     <ContactForm />
     <Footer />
   </div>
@@ -40,6 +40,8 @@ function App() {
         <Route path="/hackathons/submit" element={<HackathonSubmission />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/faq" element={<FAQ />} />
       </Routes>
     </Router>
   );
