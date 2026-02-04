@@ -61,7 +61,7 @@ const HackathonLanding = () => {
                 </div>
               <h1 className="text-5xl md:text-[8rem] lg:text-[9rem] font-black tracking-tighter mb-8 leading-[0.9] text-white">
                 BUILDATHON <br/>
-                <span className="gradient-text">2026</span>
+                <span className="gradient-text pr-2">2026</span>
               </h1>
               <p className="text-gray-400 text-xl md:text-3xl font-light max-w-3xl mx-auto mb-16 leading-relaxed">
                 Build from Anywhere. <span className="text-white font-bold">Compete Everywhere.</span>
