@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-copyright-simple">
-          © 2023 R Tech Solutions • All Rights Reserved
+          © 2026 R Tech Solutions India • MSME Registered • All Rights Reserved
         </div>
       </div>
     </footer>
