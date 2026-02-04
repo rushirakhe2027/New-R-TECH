@@ -143,3 +143,9 @@
     width: 100%;
   }
 }
+
+.nav-cta {
+  font-weight: 800 !important;
+  color: white !important;
+  letter-spacing: 0.5px;
+}
