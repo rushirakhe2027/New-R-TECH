@@ -13,6 +13,8 @@ import HackathonRules from './pages/HackathonRules';
 import HackathonSubmission from './pages/HackathonSubmission';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
+import Portfolio from './components/Portfolio';
+import ContactForm from './components/ContactForm';
 import './App.css';
 
 const MainLayout = () => (
@@ -20,10 +22,10 @@ const MainLayout = () => (
     <Navbar />
     <Hero />
     <Stats />
-    <Services />
     <About />
-    <WhyUs />
-    <CTA />
+    <Services />
+    <Portfolio />
+    <ContactForm />
     <Footer />
   </div>
 );

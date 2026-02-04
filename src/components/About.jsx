@@ -4,7 +4,7 @@ import './About.css';
 const About = () => {
   return (
     <section className="about-section" id="about">
-      <div className="container">
+      <div className="container morph-slide-up">
         <div className="about-grid">
           <div className="about-image">
             <div className="image-wrapper">

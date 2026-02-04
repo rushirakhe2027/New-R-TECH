@@ -1,15 +1,21 @@
 :root {
-  --primary: #0066FF;
-  --primary-hover: #0052CC;
+  --primary: #1E40AF; /* Pro Tech Blue */
+  --primary-light: #3B82F6;
+  --primary-dark: #1E3A8A;
+  --accent: #F59E0B; /* Amber/Silver accents */
   --secondary: #0F172A;
   --text: #1E293B;
   --text-light: #64748B;
   --bg: #FFFFFF;
   --bg-alt: #F8FAFC;
   --white: #FFFFFF;
-  --shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.08);
-  --border: #F1F5F9;
-  --radius: 12px;
+  --glass: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -26,16 +32,67 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  position: relative;
 }
 
-::selection {
-  background-color: var(--primary);
-  color: white;
+/* Animated Background Orbs */
+body::before, body::after {
+  content: '';
+  position: fixed;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%);
+  filter: blur(80px);
+  opacity: 0.08;
+  z-index: -1;
+  animation: floatOrb 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+body::after {
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  bottom: -10vw;
+  right: -10vw;
+  animation-delay: -5s;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(10vw, 5vh) scale(1.1); }
+  100% { transform: translate(-5vw, 10vh) scale(0.9); }
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-md);
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+/* Morph Slide Entrance */
+.morph-slide-up {
+  animation: morphSlideUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes morphSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 button {

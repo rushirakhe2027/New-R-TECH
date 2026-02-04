@@ -39,7 +39,7 @@ const services = [
 const Services = () => {
   return (
     <section className="section" id="services">
-      <div className="container">
+      <div className="container morph-slide-up">
         <h2>Our Expert Services</h2>
         <p className="section-subtitle">
           Comprehensive technology solutions designed to help you scale, automate, and lead in the digital era.
