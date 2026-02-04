@@ -63,17 +63,21 @@ const Process = () => {
               textAlign: 'center',
               position: 'relative',
               zIndex: 1,
-              transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
+              transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+              background: 'white', // Ensure solid background for separate box look
+              border: '1px solid rgba(0, 102, 255, 0.1)', // Distinct border
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)' // Subtle shadow for depth
             }}>
               <div className="process-number" style={{
                 position: 'absolute',
-                top: '-15px',
+                top: '20px',
                 right: '25px',
-                fontSize: '4rem',
+                fontSize: '3.5rem',
                 fontWeight: '900',
-                opacity: '0.05',
+                opacity: '0.15', // Increased opacity for better visibility
                 color: 'var(--primary)',
-                fontFamily: 'Inter, sans-serif'
+                fontFamily: 'var(--font-display)', // Use theme font
+                lineHeight: 1
               }}>0{index + 1}</div>
               
               <div className="process-icon-wrapper" style={{
@@ -87,13 +91,15 @@ const Process = () => {
                 justifyContent: 'center',
                 color: 'var(--primary)',
                 transition: 'all 0.3s ease',
-                border: '1px solid rgba(0,102,255,0.1)'
+                border: '1px solid rgba(0,102,255,0.1)',
+                position: 'relative', 
+                zIndex: 2 // Ensure icon is above number if they overlap
               }}>
                 {step.icon}
               </div>
               
-              <h3 style={{ fontSize: '1.4rem', marginBottom: '15px', color: 'var(--secondary)' }}>{step.title}</h3>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: '1.6' }}>{step.desc}</p>
+              <h3 style={{ fontSize: '1.4rem', marginBottom: '15px', color: 'var(--secondary)', position: 'relative', zIndex: 2 }}>{step.title}</h3>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: '1.6', position: 'relative', zIndex: 2 }}>{step.desc}</p>
             </div>
           ))}
         </div>
