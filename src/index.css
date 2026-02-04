@@ -145,42 +145,57 @@ button {
 }
 
 .badge {
-  display: inline-block;
-  padding: 6px 12px;
-  background-color: #e6f0ff;
+  display: block;
+  width: fit-content;
+  margin: 0 auto 24px auto;
+  padding: 8px 16px;
+  background-color: rgba(30, 64, 175, 0.08);
   color: var(--primary);
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 700;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 20px;
+  letter-spacing: 0.15em;
+  border: 1px solid rgba(30, 64, 175, 0.1);
+  text-align: center;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 1.1;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--secondary);
-  margin-bottom: 20px;
-  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+  text-align: center;
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: var(--secondary);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   text-align: center;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--secondary);
 }
 
 .section-subtitle {
   text-align: center;
   color: var(--text-light);
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto 60px auto;
-  font-size: 1.1rem;
+  font-size: 1.35rem;
+  line-height: 1.7;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {

@@ -16,17 +16,25 @@ import TermsConditions from './pages/TermsConditions';
 import Careers from './pages/Careers';
 import FAQ from './pages/FAQ';
 import ContactForm from './components/ContactForm';
+import Process from './components/Process';
+import Testimonials from './components/Testimonials';
+import TrustBar from './components/TrustBar';
+import ContactWidget from './components/ContactWidget';
 import './App.css';
 
 const MainLayout = () => (
   <div className="app">
     <Navbar />
     <Hero />
+    <TrustBar />
     <Stats />
     <About />
+    <Process />
     <Services />
+    <Testimonials />
     <ContactForm />
     <Footer />
+    <ContactWidget />
   </div>
 );
 

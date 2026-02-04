@@ -5,6 +5,16 @@ const About = () => {
   return (
     <section className="about-section" id="about">
       <div className="container morph-slide-up">
+        {/* Centered Header Section */}
+        <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <span className="badge">Who We Are</span>
+          <h2 className="section-title">Driven by <span className="text-gradient-premium">Innovation</span></h2>
+          <p className="section-subtitle">
+            R Tech Solutions is a Maharashtra-based software development powerhouse. 
+            We bridge the gap between complex technology and user-centric solutions.
+          </p>
+        </div>
+
         <div className="about-grid">
           <div className="about-image">
             <div className="image-wrapper">
@@ -17,13 +27,7 @@ const About = () => {
           </div>
           
           <div className="about-content">
-            <div className="section-badge">About Us</div>
-            <h2 className="section-title">Who We Are</h2>
-            <p className="about-description">
-              R Tech Solutions is a Maharashtra-based software development company specializing in 
-              web development, mobile applications, and AI/ML solutions. We empower startups, 
-              businesses, and students to bring their digital ideas to life.
-            </p>
+            {/* Removed internal title/badge to avoid duplication */}
             
             <div className="about-features">
               <div className="feature-item">
