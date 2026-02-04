@@ -61,7 +61,7 @@
   padding: 20px 0;
 }
 
-.section-badge {
+.about-section .section-badge {
   display: inline-block;
   padding: 8px 20px;
   background: rgba(19, 127, 236, 0.1);
@@ -75,7 +75,7 @@
   margin-bottom: 20px;
 }
 
-.section-title {
+.about-section .section-title {
   font-size: 48px;
   font-weight: 800;
   color: #ffffff;
@@ -83,7 +83,7 @@
   line-height: 1.2;
 }
 
-.about-description {
+.about-section .about-description {
   font-size: 18px;
   color: #b0b8d4;
   line-height: 1.8;
