@@ -42,7 +42,7 @@ const HackathonLanding = () => {
               <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-neon-blue/10 rounded-full blur-[140px]"></div>
             </div>
             <div className="relative z-10 w-full max-w-6xl text-center">
-                <div className="flex flex-col items-center gap-6 text-neon-blue mb-2">
+                <div className="flex flex-col items-center gap-6 text-neon-blue mb-10">
                   <img 
                     src="/assets/r-tech-logo.png" 
                     alt="R Tech Solutions Logo" 
@@ -56,7 +56,7 @@ const HackathonLanding = () => {
                     <div className="h-[2px] w-12 bg-neon-blue/50"></div>
                   </div>
                 </div>
-                <div className="inline-block bg-neon-blue/10 border border-neon-blue/30 backdrop-blur-md px-8 py-2.5 rounded-full shadow-[0_0_15px_rgba(0,242,255,0.1)]">
+                <div className="inline-block bg-neon-blue/10 border border-neon-blue/30 backdrop-blur-md px-8 py-2.5 rounded-full shadow-[0_0_15px_rgba(0,242,255,0.1)] mb-6">
                   <span className="text-neon-blue text-xs font-black tracking-widest uppercase">Online Hackathon</span>
                 </div>
               <h1 className="text-5xl md:text-[8rem] lg:text-[9rem] font-black tracking-tighter mb-8 leading-[0.9] text-white">
