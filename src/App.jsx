@@ -15,11 +15,13 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import Careers from './pages/Careers';
 import FAQ from './pages/FAQ';
+import Projects from './pages/Projects';
 import ContactForm from './components/ContactForm';
 import Process from './components/Process';
 // import Testimonials from './components/Testimonials';
 import TrustBar from './components/TrustBar';
 import ContactWidget from './components/ContactWidget';
+import ProjectsSection from './components/ProjectsSection';
 import './App.css';
 
 const MainLayout = () => (
@@ -31,6 +33,7 @@ const MainLayout = () => (
     <About />
     <Process />
     <Services />
+    <ProjectsSection />
     {/* <Testimonials /> */}
     <ContactForm />
     <Footer />
@@ -50,6 +53,7 @@ function App() {
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   );
