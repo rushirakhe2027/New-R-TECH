@@ -56,7 +56,7 @@ const Careers = () => {
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <span style={{ fontSize: '0.85rem', color: 'var(--primary)', fontWeight: '600' }}>{job.duration}</span>
-                  <a href="https://wa.me/918421812027" className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '0.85rem' }}>Apply Now</a>
+                  <a href="https://forms.gle/zrzteYt43NcZGFhz5" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '8px 16px', fontSize: '0.85rem' }}>Apply Now</a>
                 </div>
               </div>
             ))}
