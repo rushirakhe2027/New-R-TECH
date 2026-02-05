@@ -87,10 +87,10 @@ const Projects = () => {
               engineered for excellence. We handle the tech, you lead the presentation.
             </p>
             <div className="hero-actions animate-fade-in-up delay-300">
-              <button className="btn btn-primary-blue group">
+              <a href="https://wa.me/918421812027" target="_blank" rel="noopener noreferrer" className="btn btn-primary-blue group">
                 Start Your Project
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
               <button className="btn btn-outline-white">Explore Samples</button>
             </div>
             
@@ -133,9 +133,9 @@ const Projects = () => {
            <div className="help-popup">
               <p className="text-xs font-bold whitespace-nowrap">Need Help? Talk to us!</p>
            </div>
-           <button className="help-button">
+           <a href="https://wa.me/918421812027" target="_blank" rel="noopener noreferrer" className="help-button">
               <MessageCircle size={24} />
-           </button>
+           </a>
         </div>
       </section>
 
@@ -182,8 +182,8 @@ const Projects = () => {
               top-grade projects with our expert guidance.
             </p>
             <div className="cta-buttons">
-              <button className="btn btn-white text-blue-700">Get Started Today</button>
-              <button className="btn btn-outline-white">Talk to an Expert</button>
+              <a href="https://wa.me/918421812027" target="_blank" rel="noopener noreferrer" className="btn btn-white text-blue-700">Get Started Today</a>
+              <a href="https://wa.me/918421812027" target="_blank" rel="noopener noreferrer" className="btn btn-outline-white">Talk to an Expert</a>
             </div>
           </div>
         </div>
