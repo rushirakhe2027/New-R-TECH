@@ -34,10 +34,20 @@ const ProjectsSection = () => {
               </div>
             </div>
             
-            <Link to="/projects" className="btn btn-primary mt-8">
-              Explore Project Services
-              <ArrowRight size={20} />
-            </Link>
+            <div className="action-btns">
+              <Link to="/projects" className="btn btn-outline-primary">
+                Explore Services
+              </Link>
+              <a 
+                href="https://wa.me/918421812027?text=Hello%20R%20Tech%20Solutions%2C%20I'm%20interested%20in%20project%20services." 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-whatsapp"
+              >
+                <MessageCircle size={20} />
+                WhatsApp Now
+              </a>
+            </div>
           </div>
           
           <div className="projects-grid-preview">

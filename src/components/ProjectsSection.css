@@ -26,6 +26,46 @@
   font-size: 1rem;
 }
 
+.action-btns {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.btn-outline-primary {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  border: 1px solid #25D366;
+}
+
+.btn-whatsapp:hover {
+  background: #128C7E;
+  border-color: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+}
+
+@media (max-width: 576px) {
+  .action-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  .action-btns .btn {
+    width: 100%;
+  }
+}
+
 .projects-grid-preview {
   position: relative;
   height: 400px;

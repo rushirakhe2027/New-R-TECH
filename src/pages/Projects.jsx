@@ -139,6 +139,30 @@ const Projects = () => {
         </div>
       </section>
 
+      {/* WhatsApp Highlight Section */}
+      <section className="whatsapp-highlight">
+        <div className="container">
+          <div className="whatsapp-card glass-premium">
+            <div className="whatsapp-icon-large">
+              <MessageCircle size={48} />
+            </div>
+            <div className="whatsapp-info">
+              <h3>Connect Directly on WhatsApp</h3>
+              <p>Skip the email and get instant answers about your project. Our experts are ready to help you 24/7.</p>
+            </div>
+            <a 
+              href="https://wa.me/918421812027?text=Hello%20R%20Tech%20Solutions%2C%20I'm%20on%20the%20Projects%20page%20and%20interested%20in%20starting%20a%20project." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-whatsapp-large"
+            >
+              <MessageCircle size={20} className="mr-2" />
+              Chat on WhatsApp Now
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Lifecycle Section */}
       <section className="lifecycle-section">
         <div className="container">

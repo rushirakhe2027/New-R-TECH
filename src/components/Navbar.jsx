@@ -28,12 +28,14 @@ const Navbar = () => {
             <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
             <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
             <a href="/#services" onClick={() => setIsOpen(false)}>Services</a>
-            <Link to="/hackathons" onClick={() => setIsOpen(false)}>Hackathons</Link>
+{/* <Link to="/hackathons" onClick={() => setIsOpen(false)}>Hackathons</Link> */}
             <Link to="/careers" onClick={() => setIsOpen(false)}>Careers</Link>
           </div>
           <div className="nav-right">
             <a 
-              href="#contact" 
+              href="https://wa.me/918421812027?text=Hello%20R%20Tech%20Solutions%2C%20I'd%20like%20to%20talk%20about%20a%20project." 
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-primary nav-cta" 
               style={{ color: '#ffffff', fontWeight: '800' }}
             >
