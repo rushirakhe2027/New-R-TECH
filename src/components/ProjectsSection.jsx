@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, ArrowRight, Code2, FileText, CheckCircle } from 'lucide-react';
+import { Sparkles, ArrowRight, Code2, FileText, CheckCircle, MessageCircle } from 'lucide-react';
 import './ProjectsSection.css';
 
 const ProjectsSection = () => {

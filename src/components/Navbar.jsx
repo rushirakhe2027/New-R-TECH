@@ -28,7 +28,7 @@ const Navbar = () => {
             <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
             <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
             <a href="/#services" onClick={() => setIsOpen(false)}>Services</a>
-{/* <Link to="/hackathons" onClick={() => setIsOpen(false)}>Hackathons</Link> */}
+
             <Link to="/careers" onClick={() => setIsOpen(false)}>Careers</Link>
           </div>
           <div className="nav-right">

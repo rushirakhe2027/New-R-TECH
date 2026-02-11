@@ -38,9 +38,7 @@ const Hero = () => {
               <a href="https://wa.me/918421812027" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
                 Start Your Project
               </a>
-{/* <Link to="/hackathons" className="btn btn-outline btn-large">
-                Explore Buildathons
-              </Link> */}
+
             </div>
 
             <div className="hero-trusted-by">

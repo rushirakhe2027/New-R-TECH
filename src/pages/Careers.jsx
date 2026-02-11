@@ -20,7 +20,7 @@ const Careers = () => {
         <div className="container">
           <div className="careers-header morph-slide-up" style={{ textAlign: 'center', marginBottom: '60px' }}>
             <span className="badge">Careers</span>
-            <h1 className="hero-title" style={{ fontSize: '3.5rem' }}>Join the <span className="text-gradient-premium">Future</span> of Tech</h1>
+            <h1 className="hero-title" style={{ fontSize: '3.5rem', textAlign: 'center', margin: '0 auto 24px auto' }}>Join the <span className="text-gradient-premium">Future</span> of Tech</h1>
             <p className="section-subtitle">
               Passionate about building scalable solutions? Explore our internship opportunities 
               and start your journey with R Tech Solutions.
