@@ -40,7 +40,7 @@ const projects = [
     id: 5,
     title: "AI Trade Bot",
     category: "AI/ML",
-    image: "https://images.unsplash.com/photo-1611974714851-eb6053e623e0?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop",
     desc: "High-precision trading bot with sentiment analysis and automated execution strategies.",
     tech: ["Python", "Pandas", "MT5 Wrapper"]
   },
