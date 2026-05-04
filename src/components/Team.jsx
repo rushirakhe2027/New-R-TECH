@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Globe, Smartphone, Cloud, PenTool, Database } from 'lucide-react';
+import { Cpu, Globe, Smartphone, Cloud, PenTool, Database, Microchip } from 'lucide-react';
 import './Team.css';
 
 const Team = () => {
@@ -33,6 +33,11 @@ const Team = () => {
       title: "Data Analytics",
       desc: "Transforming raw data into actionable business intelligence and dashboards.",
       icon: <Database size={40} className="domain-icon" />
+    },
+    {
+      title: "Hardware & IoT",
+      desc: "Custom embedded systems, smart devices, and complete Internet of Things integrations.",
+      icon: <Microchip size={40} className="domain-icon" />
     }
   ];
 

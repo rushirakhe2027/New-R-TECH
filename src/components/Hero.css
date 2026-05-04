@@ -34,7 +34,18 @@
     color: var(--secondary);
     margin-bottom: 24px;
     letter-spacing: -2px;
+}
+
+.hero-main-text {
     text-align: left;
+}
+
+.hero-main-text .hero-title {
+    text-align: left;
+}
+
+.hero-main-text .section-badge-premium {
+    margin-left: 0;
 }
 
 .hero-subtext-overhaul {
@@ -214,7 +225,10 @@
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .hero-title {
+    .hero-main-text {
+        text-align: center;
+    }
+    .hero-main-text .hero-title {
         text-align: center;
     }
     .hero-subtext-overhaul { margin-left: auto; margin-right: auto; }

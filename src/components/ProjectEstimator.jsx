@@ -9,7 +9,8 @@ const ProjectEstimator = () => {
   const estimates = {
     'Web': { 'Low': '₹40k - ₹80k', 'Medium': '₹80k - ₹1.5L', 'High': '₹2L+' },
     'App': { 'Low': '₹50k - ₹1L', 'Medium': '₹1L - ₹2.5L', 'High': '₹3L+' },
-    'AI': { 'Low': '₹75k - ₹1.5L', 'Medium': '₹1.5L - ₹4L', 'High': '₹5L+' }
+    'AI': { 'Low': '₹75k - ₹1.5L', 'Medium': '₹1.5L - ₹4L', 'High': '₹5L+' },
+    'IoT': { 'Low': '₹60k - ₹1L', 'Medium': '₹1L - ₹3L', 'High': '₹4L+' }
   };
 
   return (
@@ -26,13 +27,13 @@ const ProjectEstimator = () => {
             <div className="estimator-field">
               <label>Service Type</label>
               <div className="estimator-options">
-                {['Web', 'App', 'AI'].map(s => (
+                {['Web', 'App', 'AI', 'IoT'].map(s => (
                   <button 
                     key={s} 
                     className={service === s ? 'active' : ''} 
                     onClick={() => setService(s)}
                   >
-                    {s === 'Web' ? 'Web Dev' : s === 'App' ? 'App Dev' : 'AI Solutions'}
+                    {s === 'Web' ? 'Web Dev' : s === 'App' ? 'App Dev' : s === 'AI' ? 'AI Solutions' : 'IoT / Hardware'}
                   </button>
                 ))}
               </div>

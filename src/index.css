@@ -186,6 +186,16 @@ h2 {
   line-height: 1.2;
 }
 
+.section-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .section-title {
   text-align: center;
   font-size: 3.5rem;
