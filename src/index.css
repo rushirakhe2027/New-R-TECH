@@ -3,7 +3,9 @@
   --primary-light: #4da6ff;
   --primary-dark: #005bb5;
   --primary-hover: #0f62b8;
-  --accent: #00f2ff; /* Neon blue accent from config */
+  --accent: #14b8a6; /* Teal Green from Logo */
+  --accent-light: #2dd4bf;
+  --accent-dark: #0d9488;
   --secondary: #0F172A;
   --text: #1E293B;
   --text-light: #64748B;
@@ -145,9 +147,9 @@ button {
 }
 
 .btn-outline:hover {
-  background-color: var(--primary);
+  background-color: var(--accent);
   color: var(--white);
-  border-color: var(--primary);
+  border-color: var(--accent);
 }
 
 .badge {
@@ -155,15 +157,23 @@ button {
   width: fit-content;
   margin: 0 auto 24px auto;
   padding: 8px 16px;
-  background-color: rgba(30, 64, 175, 0.08);
-  color: var(--primary);
+  background-color: rgba(20, 184, 166, 0.1);
+  color: var(--accent-dark);
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  border: 1px solid rgba(30, 64, 175, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.2);
   text-align: center;
+}
+
+.text-gradient-premium {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 h1 {
