@@ -52,7 +52,7 @@ const MainLayout = () => (
     <ProjectEstimator />
     <Pricing />
     <Team />
-    <Testimonials />
+    {/* <Testimonials /> */}
     <Blog />
     <HomeFAQ />
     <ContactForm />
