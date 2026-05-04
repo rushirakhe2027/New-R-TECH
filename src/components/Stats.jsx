@@ -6,18 +6,18 @@ const Stats = () => {
   const stats = [
     {
       icon: <Target size={24} className="stat-icon" />,
-      label: 'Target Audience',
-      value: 'Startups & Businesses'
+      label: 'Success Rate',
+      value: '99% Client Satisfaction'
     },
     {
       icon: <MapPin size={24} className="stat-icon" />,
-      label: 'Main HQ',
-      value: 'Maharashtra, India'
+      label: 'National Reach',
+      value: 'Pune | Mumbai | Bangalore | Solapur'
     },
     {
       icon: <GraduationCap size={24} className="stat-icon" />,
-      label: 'Specializing In',
-      value: 'Student Academic Projects'
+      label: 'Projects Delivered',
+      value: '50+ Digital Assets'
     }
   ];
 

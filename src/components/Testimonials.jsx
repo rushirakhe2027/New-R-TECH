@@ -6,18 +6,21 @@ const Testimonials = () => {
     {
       name: "Saurabh Deshmukh",
       role: "CEO, AgriTech Solutions",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
       comment: "R Tech Solutions delivered our supply chain management system ahead of schedule. Their expertise in AI integration is truly world-class.",
       rating: 5
     },
     {
       name: "Anjali Verma",
       role: "Product Head, FinVibe",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop",
       comment: "The UI/UX design they crafted for our mobile app tripled our user engagement within the first month of launch.",
       rating: 5
     },
     {
       name: "Pratik Kamble",
       role: "Founder, EduScale",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop",
       comment: "Highly professional team. They translated our vision into a scalable platform that now handles thousands of concurrent students.",
       rating: 5
     }
@@ -66,9 +69,12 @@ const Testimonials = () => {
                 fontWeight: '500' 
               }}>"{review.comment}"</p>
 
-              <div className="client-info">
-                <h4 style={{ fontWeight: '800', fontSize: '1.1rem', color: 'var(--primary)' }}>{review.name}</h4>
-                <p style={{ color: 'var(--text-light)', fontSize: '0.85rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>{review.role}</p>
+              <div className="client-info" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                <img src={review.image} alt={review.name} style={{ width: '50px', height: '50px', borderRadius: '50%', objectFit: 'cover' }} />
+                <div>
+                  <h4 style={{ fontWeight: '800', fontSize: '1.1rem', color: 'var(--primary)' }}>{review.name}</h4>
+                  <p style={{ color: 'var(--text-light)', fontSize: '0.85rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>{review.role}</p>
+                </div>
               </div>
             </div>
           ))}

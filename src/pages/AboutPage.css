@@ -1,0 +1,110 @@
+.about-page-hero {
+  padding-top: 160px;
+  padding-bottom: 60px;
+}
+
+.about-stats-container {
+  margin-bottom: 80px;
+}
+
+.mission-vision-section {
+  padding: 100px 0;
+  background: var(--bg-alt);
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.mv-card {
+  padding: 50px 40px;
+  border-radius: 40px;
+  text-align: center;
+  background: white;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.dark .mv-card {
+  background: var(--bg-alt);
+}
+
+.mv-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+}
+
+.mv-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(30, 64, 175, 0.1);
+  color: var(--primary);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+}
+
+.mv-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin-bottom: 16px;
+}
+
+.mv-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.about-cta {
+  padding: 100px 0;
+}
+
+.cta-box {
+  padding: 80px;
+  border-radius: 50px;
+  text-align: center;
+  background: white;
+  border: 1px solid var(--border);
+}
+
+.dark .cta-box {
+  background: var(--bg-alt);
+}
+
+.cta-box h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.cta-box p {
+  color: var(--text-light);
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.cta-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-page-hero {
+    padding-top: 120px;
+  }
+  .cta-box {
+    padding: 40px 20px;
+  }
+  .cta-box h2 {
+    font-size: 2rem;
+  }
+  .cta-btns {
+    flex-direction: column;
+  }
+}

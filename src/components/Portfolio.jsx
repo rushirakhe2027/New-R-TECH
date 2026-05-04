@@ -56,7 +56,7 @@ const projects = [
 
 const categories = ["All", "Web App", "AI/ML", "FinTech", "E-commerce"];
 
-const Portfolio = () => {
+const Portfolio = ({ hideHeader = false }) => {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects = activeCategory === "All" 
@@ -66,11 +66,15 @@ const Portfolio = () => {
   return (
     <section className="section portfolio-section" id="portfolio">
       <div className="container">
-        <span className="badge">Our Portfolio</span>
-        <h2>Showcasing Excellence</h2>
-        <p className="section-subtitle">
-          Over 20+ successful projects delivered, ranging from innovative startups to complex enterprise solutions.
-        </p>
+        {!hideHeader && (
+          <div className="section-header">
+            <span className="badge">Our Portfolio</span>
+            <h2 className="section-title">Showcasing Excellence</h2>
+            <p className="section-subtitle">
+              Over 20+ successful projects delivered, ranging from innovative startups to complex enterprise solutions.
+            </p>
+          </div>
+        )}
 
         <div className="filter-tabs">
           {categories.map(cat => (

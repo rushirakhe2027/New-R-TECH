@@ -25,10 +25,15 @@ const Navbar = () => {
 
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
           <div className="nav-menu">
-            <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
+            <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
             <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
             <a href="/#services" onClick={() => setIsOpen(false)}>Services</a>
-
+            <Link to="/portfolio" onClick={() => setIsOpen(false)}>Portfolio</Link>
+            <a href="/#pricing" onClick={() => setIsOpen(false)}>Pricing</a>
+            <a href="/#team" onClick={() => setIsOpen(false)}>Team</a>
+            <a href="/#blog" onClick={() => setIsOpen(false)}>Blog</a>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+            {/* <Link to="/hackathons" onClick={() => setIsOpen(false)}>Hackathons</Link> */}
             <Link to="/careers" onClick={() => setIsOpen(false)}>Careers</Link>
           </div>
           <div className="nav-right">

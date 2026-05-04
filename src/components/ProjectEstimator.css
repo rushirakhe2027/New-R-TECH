@@ -1,0 +1,104 @@
+.estimator-section {
+  background: var(--bg);
+  padding: 100px 0;
+}
+
+.estimator-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px;
+  border-radius: 40px;
+  text-align: center;
+  background: white;
+  border: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+.dark .estimator-card {
+  background: var(--bg-alt);
+}
+
+.estimator-header h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 20px 0 10px;
+}
+
+.estimator-header p {
+  color: var(--text-light);
+  margin-bottom: 40px;
+}
+
+.estimator-field {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.estimator-field label {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: var(--secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.estimator-options {
+  display: flex;
+  gap: 12px;
+}
+
+.estimator-options button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--bg-alt);
+  color: var(--text-light);
+  font-weight: 700;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.estimator-options button.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.2);
+}
+
+.estimator-result {
+  margin: 40px 0;
+  padding: 30px;
+  background: rgba(30, 64, 175, 0.05);
+  border-radius: 24px;
+}
+
+.result-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+.result-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  display: block;
+}
+
+.result-note {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 10px;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .estimator-card {
+    padding: 30px;
+  }
+  .estimator-options {
+    flex-direction: column;
+  }
+}

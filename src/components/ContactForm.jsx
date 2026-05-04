@@ -109,7 +109,7 @@ const ContactForm = () => {
                                     <option>Mobile App Development</option>
                                     <option>AI/ML Solutions</option>
                                     <option>UI/UX Design</option>
-                                    <option>Student Project</option>
+                                    <option>Other / Custom Solution</option>
                                 </select>
                             </div>
                             <div className="form-group">

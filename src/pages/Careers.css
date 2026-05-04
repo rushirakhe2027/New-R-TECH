@@ -1,0 +1,125 @@
+.careers-section {
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.job-card {
+  padding: 40px;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 102, 255, 0.05);
+  transition: all 0.4s ease;
+  background: white;
+}
+
+.job-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 102, 255, 0.08);
+  border-color: var(--primary-light);
+}
+
+.job-type-badge {
+  padding: 6px 16px;
+  background: rgba(30, 64, 175, 0.05);
+  color: var(--primary);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.job-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin: 20px 0 12px;
+}
+
+.job-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 20px;
+}
+
+.job-duration {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.careers-cta {
+  margin-top: 100px;
+  padding: 60px;
+  border-radius: 40px;
+  text-align: center;
+  background: var(--bg-alt);
+  border: 2px dashed rgba(30, 64, 175, 0.2);
+}
+
+.careers-cta h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin-bottom: 16px;
+}
+
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.perk-item {
+  text-align: center;
+  padding: 30px;
+}
+
+.perk-icon-box {
+  width: 60px;
+  height: 60px;
+  background: white;
+  color: var(--primary);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.perk-item h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin-bottom: 8px;
+}
+
+.perk-item p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .careers-section {
+    padding-top: 120px;
+  }
+  .careers-cta {
+    padding: 30px;
+  }
+}

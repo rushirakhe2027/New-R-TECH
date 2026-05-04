@@ -1,9 +1,9 @@
 :root {
-  --primary: #1E40AF; /* Pro Tech Blue */
-  --primary-light: #3B82F6;
-  --primary-dark: #1E3A8A;
-  --primary-hover: #153e75; /* Darker blue for hover */
-  --accent: #F59E0B; /* Amber/Silver accents */
+  --primary: #137fec; /* R-Tech Logo Blue */
+  --primary-light: #4da6ff;
+  --primary-dark: #005bb5;
+  --primary-hover: #0f62b8;
+  --accent: #00f2ff; /* Neon blue accent from config */
   --secondary: #0F172A;
   --text: #1E293B;
   --text-light: #64748B;
@@ -18,7 +18,10 @@
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
   --font-main: 'Outfit', system-ui, -apple-system, sans-serif;
+  --border: rgba(0, 0, 0, 0.1);
 }
+
+
 
 * {
   margin: 0;

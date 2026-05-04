@@ -25,20 +25,19 @@ const Hero = () => {
             </motion.span>
             
             <h1 className="hero-title">
-              Crafting <span className="text-gradient-premium">Intelligent</span> <br /> 
-              Digital Frontiers
+              Innovating <span className="text-gradient-premium">Intelligence</span> <br /> 
+              For Indian Enterprises
             </h1>
             
             <p className="hero-subtext-overhaul">
-              R Tech Solutions delivers high-performance Software, AI, and Mobile ecosystems 
-              engineered for the future of business.
+              Empowering industry leaders with bespoke AI ecosystems, high-performance software architectures, 
+              and transformative digital experiences engineered for scale and speed.
             </p>
 
             <div className="hero-cta-group">
               <a href="https://wa.me/918421812027" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
                 Start Your Project
               </a>
-
             </div>
 
             <div className="hero-trusted-by">

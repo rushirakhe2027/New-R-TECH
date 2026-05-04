@@ -1,0 +1,53 @@
+.portfolio-page-hero {
+  padding-top: 160px;
+  padding-bottom: 60px;
+}
+
+.portfolio-container-full .portfolio-section {
+  background: transparent;
+}
+
+.client-success-section {
+  padding: 100px 0;
+}
+
+.success-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  border-radius: 40px;
+  background: white;
+  border: 1px solid var(--border);
+  gap: 40px;
+}
+
+.dark .success-banner {
+  background: var(--bg-alt);
+}
+
+.success-text h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin-bottom: 12px;
+}
+
+.success-text p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .success-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-page-hero {
+    padding-top: 120px;
+  }
+}

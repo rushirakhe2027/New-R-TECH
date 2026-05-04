@@ -34,6 +34,7 @@
     color: var(--secondary);
     margin-bottom: 24px;
     letter-spacing: -2px;
+    text-align: left;
 }
 
 .hero-subtext-overhaul {
@@ -211,6 +212,9 @@
 @media (max-width: 992px) {
     .hero-content-overhaul {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-title {
         text-align: center;
     }
     .hero-subtext-overhaul { margin-left: auto; margin-right: auto; }

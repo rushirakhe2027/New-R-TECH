@@ -1,70 +1,126 @@
-.bg-light {
-  background-color: var(--bg-alt);
+.why-us-section {
+  background: var(--bg-alt);
+  overflow: hidden;
+  position: relative;
 }
 
-.why-container {
+.why-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.why-points-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 60px;
+  gap: 30px;
 }
 
-.why-image img {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-}
-
-.why-content h2 {
-  text-align: left;
-}
-
-.why-subtitle {
-  color: var(--text-light);
-  margin-bottom: 24px;
-  font-size: 1.1rem;
-}
-
-.why-points {
+.why-point-item {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
-.why-point {
-  display: flex;
-  gap: 20px;
-}
-
-.check-icon {
-  color: var(--primary);
+.point-icon-box {
   flex-shrink: 0;
-  margin-top: 4px;
+  width: 40px;
+  height: 40px;
+  background: rgba(30, 64, 175, 0.1);
+  color: var(--primary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.why-point h4 {
+.point-text h4 {
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--secondary);
   margin-bottom: 8px;
 }
 
-.why-point p {
+.point-text p {
+  font-size: 0.9rem;
   color: var(--text-light);
-  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-@media (max-width: 992px) {
-  .why-container {
+.why-visual {
+  position: relative;
+}
+
+.why-img-main {
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.experience-badge {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: 3;
+  padding: 24px;
+  border-radius: 24px;
+  text-align: center;
+  min-width: 150px;
+  background: white;
+}
+
+.exp-num {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.exp-text {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.why-blob {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 300px;
+  background: var(--primary-light);
+  filter: blur(80px);
+  opacity: 0.1;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .why-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 60px;
   }
-  
-  .why-content h2 {
-    text-align: center;
+  .why-visual {
+    order: -1;
   }
-  
-  .why-subtitle {
-    text-align: center;
+}
+
+@media (max-width: 640px) {
+  .why-points-grid {
+    grid-template-columns: 1fr;
+  }
+  .experience-badge {
+    top: 20px;
+    left: 20px;
+    padding: 15px;
+  }
+  .exp-num {
+    font-size: 1.8rem;
   }
 }
